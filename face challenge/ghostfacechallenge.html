@@ -1,0 +1,298 @@
+<!doctype html>
+<head>
+
+<script>
+var swishSound = new Audio('ice.mp3');
+
+function ghost1()
+{
+	document.getElementById('ghostImg').src='ghostImg/ghost1.png';	
+	swishSound.play();
+
+}
+
+function ghost2()
+{
+	document.getElementById('ghostImg').src='ghostImg/ghost2.png';	
+swishSound.play();
+
+}
+
+function ghost3()
+{
+	document.getElementById('ghostImg').src='ghostImg/ghost3.png';	
+swishSound.play();
+
+}
+
+function ghost4()
+{
+	document.getElementById('ghostImg').src='ghostImg/ghost4.png';	
+swishSound.play();
+
+}
+
+
+function roundEyes()
+{
+	document.getElementById('eyes').src='eyes/roundeyes.png';
+	swishSound.play();
+
+}
+
+function pacEyes()
+{
+	document.getElementById('eyes').src='eyes/paceyes.png';
+}
+
+function sleepEyes()
+{
+	document.getElementById('eyes').src='eyes/sleepy.png';
+}
+
+
+
+
+function mouth1()
+{
+	document.getElementById('mouth').src='mouth/tounge.png';
+	swishSound.play();
+
+	
+}
+
+function mouth2()
+{
+	document.getElementById('mouth').src='mouth/closed.png';
+	swishSound.play();
+
+	
+}
+
+function mouth3()
+{
+	document.getElementById('mouth').src='mouth/teeth.png';
+	swishSound.play();
+
+	
+}
+
+function mouth4()
+{
+	document.getElementById('mouth').src='mouth/smug.png';
+swishSound.play();
+
+}
+
+function hat1()
+{
+	document.getElementById('hat').src='hat/hat1.png';
+
+}
+
+function hat2()
+{
+	document.getElementById('hat').src='hat/hat2.png';
+
+}
+
+function hat3()
+{
+	document.getElementById('hat').src='hat/hat3.png';
+	swishSound.play();
+
+
+}
+
+
+</script>
+<style>
+.center
+{text-align:center;
+}
+
+
+.lightBG
+{
+    box-shadow: 10px 10px;
+   background: linear-gradient(to bottom, #ffffff 0%, #ffcc99 100%);
+
+border: 100px solid LightGray
+width: 10%;
+overflow: hidden;
+
+}
+
+.spaceBG 
+{
+     margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 400px;
+    margin-left: 400px;
+}
+
+button
+{
+background-color:white;
+font-size: 25px;
+padding: 10px 25px;
+border-radius: 15px 50px;
+color: black;
+transition-duration: 0.2s;
+border: 2px solid red;
+margin: 4px;
+}
+
+button:hover
+{
+background-color:red;
+color:LightYellow;
+border: 2px solid LightYellow;
+}
+
+.faceContainer
+{
+height: 240px;
+width: 240px;
+margin: auto;
+position: relative;
+}
+
+
+h1 {
+
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.right
+{
+float:left;
+width:66%;
+}
+
+
+.ghostImg
+{
+position: relative;
+left: 0px;
+top: 0px;
+}
+
+.eyes
+{
+position:absolute;
+right:10px;
+left: 50px;
+top:0;
+}
+
+.mouth {
+    position: absolute;
+   
+	right: 80px;
+	left: 50px;
+	bottom: 50px;
+  
+}
+
+
+.faceContainer
+{
+height:300px;
+width: 300px;
+margin: auto;
+position: relative;
+}
+
+
+@media screen and (max-width:1000px)
+{
+	.left, .right
+	{
+	width:100%;
+	}
+}
+
+
+</style>
+<title>
+Ghost Face Challenge
+</title>
+</head>
+
+<body style="background-image:url('pac.jpg')">
+<div class="lightBG spaceBG center">
+<h1 class="center" style= "color: #F5F5F5"> Customize Your Own Pac-Ghost</h1>
+<hr>
+<br>
+<br>
+<div class="center">
+<img id="hat" class="hat" src="hat/hat1.png">
+</div>
+
+<div class="faceContainer center">
+
+<img id="ghostImg" class="ghostImg" src="ghostImg/ghost1.png">
+<img id="eyes" class="eyes" src="eyes/roundeyes.png">
+<img id="mouth" class="mouth" src="mouth/smug.png">
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<p class="center"> Choose a Pac-Ghost</p>
+
+<button onclick="ghost1()" type="button">Blinky</button>
+<button onclick="ghost3()" type="button">Pinky</button>
+<button onclick="ghost2()" type="button">Inky</button>
+<button onclick="ghost4()" type="button">Clyde</button>
+<hr>
+
+<br>
+<br>
+
+<p class="center"> Choose its eyes.</p>
+<button onclick="roundEyes()" type="button">Round Eyes</button>
+<button onclick="pacEyes()">Pac Man Eyes</button>
+<button onclick="sleepEyes()" type="button">Sleepy Eyes</button>
+
+
+<hr>
+<br>
+<br>
+<p class="center"> Choose its mouth.</p>
+
+<button onclick="mouth1()"type="button">Tounge</button>
+<button onclick="mouth2()" type="button">Closed</button>
+<button onclick="mouth3()" type="button">Teeth</button>
+<button onclick="mouth4()" type="button">Smug</button>
+
+<hr>
+
+<br>
+<br>
+
+<p class="center"> Choose a hat.</p>
+<button onclick="hat1()" type="button">Birthday Hat</button>
+<button onclick="hat2()" type="button">Jester</button>
+<button onclick="hat3()" type="button">Wizard Hat</button>
+</div>
+
+</div>
+<br>
+<div class="center">
+<audio autoplay controls loop>
+<source src="pacfever.mp3" type="audio/mpeg">
+</audio>
+
+</div>
